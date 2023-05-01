@@ -1,6 +1,11 @@
+#Install Piccolo if it hasn't been installed yet
+install.packages("devtools")
+
+devtools::install_github("Amartya101/Piccolo")
+
 #Piccolo script for 10X PBMC 3k data set
 
-setwd("~/Documents/PBMC3k_Data/")
+setwd("~/Documents/PBMC3k_Data/") #Specify the path to the directory that contains the 10X PBMC3k data
 
 #Create PiccoloList object
 pbmc3k <- Piccolo::CreatePiccoloList(MTX = "10X_PBMC3k_matrix.mtx.gz",Genes = "10X_PBMC3k_features.tsv",Barcodes = "10X_PBMC3k_barcodes.tsv")
