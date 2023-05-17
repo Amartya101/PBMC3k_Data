@@ -11,7 +11,7 @@ setwd("~/Documents/PBMC3k_Data/") #Specify the path to the directory that contai
 PiccoloList <- Piccolo::CreatePiccoloList(MTX = "10X_PBMC3k_matrix.mtx.gz",Genes = "10X_PBMC3k_features.tsv",Barcodes = "10X_PBMC3k_barcodes.tsv")
 ### Note: Make sure all 3 files are in the setwd() folder
 ###
-### Creates PiccoloList object with 3 list items: "CountsOriginal", "GenesOriginal", "BarcodesOriginal"
+### Creates PiccoloList object with 3 list items: "CountsOriginal", "GenesOriginal", "BarcodesOriginal","Counts","Genes","Barcodes"
 ### Counts ---> contains the read counts for each cell and each gene
 ### Genes ---> contains information on the genes, including identifiers
 ### Barcodes ---> Barcodes for each cell
