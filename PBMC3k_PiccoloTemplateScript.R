@@ -5,10 +5,10 @@ devtools::install_github("Amartya101/Piccolo")
 
 #Piccolo script for 10X PBMC 3k data set
 
-setwd("~/Documents/PBMC3k_Data/") #Specify the path to the directory that contains the 10X PBMC3k data
+setwd("~/Documents/PBMC3k_Data/PBMC3k/filtered_gene_bc_matrices/hg19/") #Specify the path to the directory that contains the 10X PBMC3k data
 
 #Create PiccoloList object
-PiccoloList <- Piccolo::CreatePiccoloList(MTX = "10X_PBMC3k_matrix.mtx.gz",Genes = "10X_PBMC3k_features.tsv",Barcodes = "10X_PBMC3k_barcodes.tsv")
+PiccoloList <- Piccolo::CreatePiccoloList(MTX = "matrix.mtx.gz",Genes = "genes.tsv",Barcodes = "barcodes.tsv")
 ### Note: Make sure all 3 files are in the setwd() folder
 ###
 ### Creates PiccoloList object with 3 list items: "CountsOriginal", "GenesOriginal", "BarcodesOriginal","Counts","Genes","Barcodes"
