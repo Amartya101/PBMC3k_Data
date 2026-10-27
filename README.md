@@ -1,4 +1,6 @@
-# PBMC3k_Data
+# PBMC3k data and Truth-Known PBMC 900 data
+
+## PBMC3k data
 
 10X PBMC3k data set used as an example for Piccolo
 
@@ -8,6 +10,8 @@ To download the data set, click and open the PBMC3k folder. Click on the file yo
 
 Similarly, for the template script you can click on the file and then right click Raw to bring up the option of downloading from the link. 
 
+## Truth-Known PBMC 900 data
 
+Truth-known PBMC data containing approximately 900 cells from 9 PBMC cell-types. The cell-type labels are also provided for this dataset.
 
 
